@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 首页 */
+
+body,html{width:100%;height:100%;background:url(../images/indexBg.jpg) no-repeat right bottom;position:relative;}
+
+.indexBoxWin{margin-left:120px;}
+.indexBox{width:500px;height:300px;margin:0 auto;padding-top:10%;}
+
+.indexLogo{width:217px;height:104px;background:url(../images/indexLogo.png) no-repeat;margin:0 auto;}
+.indexText01{font-size:24px;color:#2f4e78;text-align:center;line-height:45px;margin:40px 0;}
+.indexText02{font-size:16px;color:#2f4e78;text-align:center;position:absolute;bottom:80px;left:50%;margin-left:-48.5px;}
