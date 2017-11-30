@@ -61,6 +61,7 @@ public class UserController {
         session.removeAttribute("name");
         session.removeAttribute("uid");
         return "login";
+
     }
 
     @RequestMapping(value="/user/myindex",method = RequestMethod.GET)
