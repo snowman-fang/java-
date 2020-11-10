@@ -19,36 +19,36 @@ em{font-style:normal;font-weight:normal;}
 
 .sidenav{width:120px;height:100%;background:#283b5b;position:fixed;z-index:1;}
 .logo{width:120px;height:60px;background:url(../images/logo.png) no-repeat center 16px #21324e;border-bottom:solid 1px #21324e;display:block;}
-.nav{height:100%;}
-.nav>li{width:120px;border-bottom:solid 1px #21324e;display:block;position:relative;}
-.nav>li.current{background:#1b293f;}
-.nav>li>a{width:120px;height:60px;line-height:60px;color:#b7bbc7;display:block;}
-.nav>li>a.active:focus{webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;-ms-transition:all 0.3s ease;transition:all 0.3s ease;}
+.nav0{height:100%;}
+.nav0>li{width:120px;border-bottom:solid 1px #21324e;display:block;position:relative;}
+.nav0>li.current{background:#1b293f;}
+.nav0>li>a{width:120px;height:60px;line-height:60px;color:#b7bbc7;display:block;}
+.nav0>li>a.active:focus{webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;-ms-transition:all 0.3s ease;transition:all 0.3s ease;}
 
-.nav>li>a i{width:18px;height:60px;float:left;margin-left:12px;margin-right:6px;}
+.nav0>li>a i{width:18px;height:60px;float:left;margin-left:12px;margin-right:6px;}
 
-.nav>li>a i.navIcon01{background:url(../images/navIcon01.png) no-repeat center center;}
-.nav>li>a i.navIcon02{background:url(../images/navIcon02.png) no-repeat center center;}
-.nav>li>a i.navIcon03{background:url(../images/navIcon03.png) no-repeat center center;}
-.nav>li>a i.navIcon04{background:url(../images/navIcon04.png) no-repeat center center;}
-.nav>li>a i.navIcon05{background:url(../images/navIcon05.png) no-repeat center center;}
+.nav0>li>a i.navIcon01{background:url(../images/navIcon01.png) no-repeat center center;}
+.nav0>li>a i.navIcon02{background:url(../images/navIcon02.png) no-repeat center center;}
+.nav0>li>a i.navIcon03{background:url(../images/navIcon03.png) no-repeat center center;}
+.nav0>li>a i.navIcon04{background:url(../images/navIcon04.png) no-repeat center center;}
+.nav0>li>a i.navIcon05{background:url(../images/navIcon05.png) no-repeat center center;}
 
-.nav>li>a:hover{color:#fff;}
-.nav>li>a:hover i.navIcon01{background:url(../images/navIcon01_hover.png) no-repeat center center;}
-.nav>li>a:hover i.navIcon02{background:url(../images/navIcon02_hover.png) no-repeat center center;}
-.nav>li>a:hover i.navIcon03{background:url(../images/navIcon03_hover.png) no-repeat center center;}
-.nav>li>a:hover i.navIcon04{background:url(../images/navIcon04_hover.png) no-repeat center center;}
-.nav>li>a:hover i.navIcon05{background:url(../images/navIcon05_hover.png) no-repeat center center;}
+.nav0>li>a:hover{color:#fff;}
+.nav0>li>a:hover i.navIcon01{background:url(../images/navIcon01_hover.png) no-repeat center center;}
+.nav0>li>a:hover i.navIcon02{background:url(../images/navIcon02_hover.png) no-repeat center center;}
+.nav0>li>a:hover i.navIcon03{background:url(../images/navIcon03_hover.png) no-repeat center center;}
+.nav0>li>a:hover i.navIcon04{background:url(../images/navIcon04_hover.png) no-repeat center center;}
+.nav0>li>a:hover i.navIcon05{background:url(../images/navIcon05_hover.png) no-repeat center center;}
 
-.nav>li>a.current{color:#58c9c7;font-weight:bold;}
-.nav>li>a.current i.navIcon01{background:url(../images/navIcon01_current.png) no-repeat center center;}
-.nav>li>a.current i.navIcon02{background:url(../images/navIcon02_current.png) no-repeat center center;}
-.nav>li>a.current i.navIcon03{background:url(../images/navIcon03_current.png) no-repeat center center;}
-.nav>li>a.current i.navIcon04{background:url(../images/navIcon04_current.png) no-repeat center center;}
-.nav>li>a.current i.navIcon05{background:url(../images/navIcon05_current.png) no-repeat center center;}
+.nav0>li>a.current{color:#58c9c7;font-weight:bold;}
+.nav0>li>a.current i.navIcon01{background:url(../images/navIcon01_current.png) no-repeat center center;}
+.nav0>li>a.current i.navIcon02{background:url(../images/navIcon02_current.png) no-repeat center center;}
+.nav0>li>a.current i.navIcon03{background:url(../images/navIcon03_current.png) no-repeat center center;}
+.nav0>li>a.current i.navIcon04{background:url(../images/navIcon04_current.png) no-repeat center center;}
+.nav0>li>a.current i.navIcon05{background:url(../images/navIcon05_current.png) no-repeat center center;}
 
 .subnav>li{width:96px;height:40px;border-top:solid 1px #21324e;display:block;margin:0 auto;position:relative;}
-.nav>li.current>.subnav>li{border-top:solid 1px #172234;}
+.nav0>li.current>.subnav>li{border-top:solid 1px #172234;}
 .subnav>li>a{width:96px;height:40px;line-height:40px;text-align:center;color:#999;font-size:12px;display:block;}
 .subnav>li>a:hover{color:#fff;}
 .subnav>li>a.current{color:#fff;font-weight:normal;}

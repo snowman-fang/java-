@@ -46,7 +46,8 @@ public class UserController {
                 session.setAttribute("account",user.getAccount());
                 session.setAttribute("name",user.getName());
                 session.setAttribute("uid",user.getId());
-                response.sendRedirect("/user/myindex");
+                session.setAttribute("role",user.getRole());
+                response.sendRedirect("/order/index");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -71,15 +72,32 @@ public class UserController {
         return "myindex";
     }
     @RequestMapping(value="/user/doResign",method = RequestMethod.GET)
-    public String doResign(String name,String account,String password,Map module) {
-        User user=new User();
-        user.setName(name);
-        user.setAccount(account);
-        user.setPassword(password);
-        Dao.insert(user);
-        module.put("success","注册成功！");
-        module.put("user",user);
-        return "resign";
+    public String doResign(String name,String account,String password,String city,String phone,
+                           Map module,HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        if(session.getAttribute("role").toString().equals("2")){
+            module.put("message","注册失败！当前登录用户无权限操作");
+        }else {
+            User user=new User();
+            user.setName(name);
+            user.setRole("2");
+            user.setCity(city);
+            user.setPhone(phone);
+            user.setPAccount(session.getAttribute("account").toString());
+            user.setPName(session.getAttribute("name").toString());
+            user.setAccount(account);
+            user.setPassword(password);
+            User userConfirm= Dao.get(User.class, "select*from user where name=? or account=?", name,account);
+            if(userConfirm!=null){
+                module.put("message","注册失败！当前注册的用户已存在");
+            }else {
+                Dao.insert(user);
+                module.put("message","注册成功！");
+            }
+
+            //module.put("user",user);
+        }
+        return "/order/resign";
     }
 
 }

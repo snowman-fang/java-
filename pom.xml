@@ -34,7 +34,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.40</version>
+      <version>8.0.11</version>
     </dependency>
 
 
@@ -70,11 +70,11 @@
       <version>1.2.38</version>
     </dependency>
 
-    <dependency>
+    <!--<dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongo-java-driver</artifactId>
       <version>3.4.2</version>
-    </dependency>
+    </dependency>-->
 
     <dependency>
       <groupId>org.jsoup</groupId>
@@ -117,5 +117,18 @@
   </dependencies>
   <build>
     <finalName>fr.jre</finalName>
+
   </build>
+
+  <plugin>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <configuration>
+      <fork>true</fork>
+      <!-- spring-boot:run 中文乱码解决 -->
+      <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+    </configuration>
+  </plugin>
+
+
 </project>

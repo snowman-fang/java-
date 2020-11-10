@@ -63,7 +63,8 @@ form:after {
     -o-box-shadow: 0 1px 0 #fff inset;
     box-shadow: 0 1px 0 #fff inset;
     border: 1px solid #c4c6ca;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 200px;
     padding: 25px 0 0;
     position: relative;
     text-align: center;
@@ -112,11 +113,11 @@ form:after {
     background: -ms-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
     background: linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f9f9f9',GradientType=0 );
-    border: 1px solid #c4c6ca;
+    /*border: 1px solid #c4c6ca;*/
     content: "";
-    display: block;
-    height: 100%;
-    left: -1px;
+    /*display: block;*/
+/*    height: 100%;*/
+  /*  left: -1px;*/
     position: absolute;
     width: 100%;
 }

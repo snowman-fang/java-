@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.logging.Logger;
 public class Dao {
 	private static Logger log =Logger.getLogger("") ;
-	private static  ConnectionFactory factory=new ConnectionFactory();
+	private static  ConnectionFactory factory=ConnectionFactory.getInstance();
 	private static Connection conn=factory.getConnection();
 	private static SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private static SimpleDateFormat sdf1=new SimpleDateFormat("yyyy-MM-dd");

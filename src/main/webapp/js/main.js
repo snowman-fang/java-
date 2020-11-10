@@ -19,7 +19,7 @@ $(".roleType .check").click(function(){
 
 /* 导航折叠 */
 $(function() {
-    $(".nav").dcAccordion({
+    $(".nav0").dcAccordion({
         eventType: "click",
         autoClose: true,
         saveState: true,

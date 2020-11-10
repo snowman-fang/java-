@@ -24,7 +24,7 @@ public class TestApplication {
         LoginFilter httpBasicFilter = new LoginFilter();
         registrationBean.setFilter(httpBasicFilter);
         List<String> urlPatterns = new ArrayList<String>();
-        urlPatterns.add("/user/index");
+        urlPatterns.add("/order/*");
         urlPatterns.add("/forum/add");
         registrationBean.setUrlPatterns(urlPatterns);
         return registrationBean;

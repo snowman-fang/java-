@@ -26,8 +26,9 @@ public class LoginFilter implements Filter {
         HttpSession session = servletRequest.getSession();
         String path = servletRequest.getRequestURI();
         String account = (String) session.getAttribute("account");
-        if(account==null&&(path.contains("user/index")||path.contains("forum/add"))){
+        if(account==null&&(!path.contains("user/doLogin"))&&(!path.contains("user/login"))){
             servletResponse.sendRedirect("/user/login");
+            //request.getRequestDispatcher("/user/login").forward(request, response);
         }else{
             chain.doFilter(request, response);
         }
